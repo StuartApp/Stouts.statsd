@@ -20,6 +20,7 @@ statsd_healthStatus: up             # default health status to be returned and s
 statsd_flushInterval: 10000         # interval (in ms) to flush to Graphite
 statsd_percentThreshold: 90
 statsd_flush_counts: true           # send stats_counts metrics
+statsd_delete_idle_stats: true      # don't send values to graphite for inactive counters, sets, gauges, or timers
 statsd_graphite:
  legacyNamespace: false
 
